@@ -18,14 +18,14 @@
   | [徐显舜]（https://github.com/Pleaseboss） | 2212190527 | 前端核心开发+拓展模块+数据库 | 
   | [张皖男]（https://github.com/wnzhang） | 2212190106 | 后端服务+基础设施 | 
   
-   ## 项目结构 
-  
-   ！[图片]（https://github.com/user-attachments/assets/70733c4f-209f-4f15-a353-764dd60dec71) 
-  
-   
-   ## 项目计划 
-  
-   ！[图片]（https://github.com/user-attachments/assets/265d983f-0ef3-4cc4-a583-60f6ef612fea) 
+  ## 项目结构
+
+![图片](https://github.com/user-attachments/assets/70733c4f-209f-4f15-a353-764dd60dec71)
+
+## 项目计划
+
+![图片](https://github.com/user-attachments/assets/265d983f-0ef3-4cc4-a583-60f6ef612fea)
+
   
    
  
