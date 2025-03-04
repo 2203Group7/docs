@@ -9,7 +9,7 @@
   -一个频道包含若干节目的形式呈现用户订阅感兴趣的频道，并收听或收藏频道下的播客节目 
   -用户自由快捷的创作，社区互动体验 
   
-   ！[图片-20250304225606520]（https://github.com/user-attachments/assets/8c023332-b285-4c3c-9aaf-c188f703cb2c) 
+   ![图片](https://github.com/user-attachments/assets/8c023332-b285-4c3c-9aaf-c188f703cb2c))
   
    ## 小组成员及分工 
   
