@@ -11,7 +11,7 @@
 - 数据安全保障：提供邮箱验证安全措施，确保用户数据安全
 
   
-   ![图片](https://github.com/user-attachments/assets/8c023332-b285-4c3c-9aaf-c188f703cb2c))
+   ![图片](./images/frame.jpg)
   
    ## 小组成员及分工 
   
