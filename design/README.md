@@ -7,11 +7,11 @@
 
 
 ## 网站(App)地图
-![](./site-map.jpg)
+![](./app-map.webp)
 
 
 ## 线框图
-![](./wireframes.jpg)
+![](./wireframes.webp)
 
 
 ## 风格规范
