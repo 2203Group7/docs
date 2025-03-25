@@ -1,40 +1,69 @@
-# API设计
+# TOHEAR API 设计文档
 
-## RESTful API
+## 项目概述
 
-RESTful API可以用OpenAPI定义，参见 [openapi.yaml](openapi.yaml)
+TOHEAR 是一个播客应用，提供播客内容管理、用户互动和个性化推荐服务。本 API 设计文档涵盖了所有暴露给开发者的 RESTful API 资源，用户可以通过这些接口管理播客、集、提醒、备忘录等功能。
 
+## 主要功能
 
-1. **资源关系**
+- **播客管理**：支持创建、更新、删除播客，按分类和标签搜索播客。
+- **集管理**：管理播客的各个集，支持分页查询和获取详细信息。
+- **用户管理**：支持用户注册、查看个人资料。
+- **提醒与备忘录**：为播客或集设置提醒和备忘录。
 
-   - `Podcast` 关联 `Category` 和多个 `Tag`，通过 `categoryId` 和 `tagIds` 字段引用
-   - `Episode` 作为 `Podcast` 的子资源（嵌套路由 `/podcasts/{podcastId}/episodes`）
-   - `User` 作为独立资源，通过 `podcast.userId` 关联
+## 资源概览
 
-2. **通用模式复用**
+- **Podcast（播客）**：管理播客的基本信息、分类和标签。
+- **Episode（集）**：与播客相关的单集内容，包括播放和下载。
+- **User（用户）**：用户注册、登录、资料查询和更新。
+- **Reminder（提醒）**：设置提醒功能，提醒用户播客或集的播放时间。
+- **Memo（备忘录）**：用户可为播客或集设置的个人备注。
 
-   - 使用 `components` 定义可复用的模型和响应
-   - 统一错误处理（`Error` schema）
+## 安全与认证
 
-3. **安全认证**
+所有 API 请求需要进行身份验证。采用 JWT Bearer Token 认证方式，所有请求头需包含 `Authorization: Bearer <JWT Token>`。
 
-   - 全局安全方案使用 JWT Bearer Token
+## API 版本
 
-4. **过滤与分页**
+API 当前版本：v1
 
-   - Podcast 列表支持按分类和标签过滤，支持分页参数
+## 资源及接口
 
-5. **符合 REST 规范**
+本部分简要描述了各个资源及其主要接口。具体接口详情请参考 `openapi.yaml` 文件。
 
-   - 正确使用 HTTP 方法语义（GET/POST/PUT/DELETE）
-   - 资源标识使用 UUID
+### Podcast（播客）
 
-## 工具
+- 获取播客列表
+- 创建、更新、删除播客
+- 获取播客详情
 
-- **Swagger UI**：生成可视化文档
-- **OpenAPI Generator**：生成服务端/客户端代码
-- **Postman**：导入并测试接口
+### Episode（集）
 
-## gRPC
+- 获取指定播客的集列表
+- 创建、更新集
+- 获取集的详细信息
 
-除了RESTful API，还可以使用 [gRPC](https://grpc.io/) ，其定义参见[podcast.proto](podcast.proto)。
+### User（用户）
+
+- 用户注册
+- 查看或更新用户信息
+
+### Reminder（提醒）
+
+- 创建、删除播客或集的提醒
+
+### Memo（备忘录）
+
+- 为播客或集添加、删除备忘录
+
+## 错误处理
+
+所有 API 错误响应遵循统一格式，返回 HTTP 状态码和详细错误信息。
+
+错误响应示例：
+
+```json
+{
+  "code": "400",
+  "message": "Bad Request"
+}
