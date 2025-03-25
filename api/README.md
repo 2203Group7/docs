@@ -2,7 +2,7 @@
 
 ## RESTful API
 
-RESTful API可以用OpenAPI定义，参见 [openapi.yaml](openapi.yaml)，文档参见[Tohear.md](./Tohear.md)。
+RESTful API可以用OpenAPI定义，参见 [openapi.yaml](openapi.yaml)
 
 
 1. **资源关系**
