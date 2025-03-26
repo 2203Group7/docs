@@ -118,7 +118,7 @@ mindmap
 ## 项目计划
 ```mermaid
 gantt
-    title iFM 爱播客 项目开发计划 (2025/03/05 - 2025/07/01)
+    title TO HEAR 项目开发计划 (2025/03/05 - 2025/07/01)
     dateFormat  YYYY-MM-DD
     axisFormat %m/%d
     
