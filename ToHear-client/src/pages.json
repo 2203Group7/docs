@@ -1,0 +1,214 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/community/community",
+			"style": {
+				"navigationBarTitleText": "社区",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationBarTitleText": "个人中心",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/search-pages/search-result",
+			"style": {
+				"navigationBarTitleText": "搜索结果页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/my/my-detail",
+			"style": {
+				"navigationBarTitleText": "个人信息",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/my/my-favorite",
+			"style": {
+				"navigationBarTitleText": "我的收藏页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/my/my-subscribe",
+			"style": {
+				"navigationBarTitleText": "频道订阅页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/my/my-history",
+			"style": {
+				"navigationBarTitleText": "收听历史页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/login-register/login",
+			"style": {
+				"navigationBarTitleText": "用户登录页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/login-register/register",
+			"style": {
+				"navigationBarTitleText": "用户注册页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/user/user",
+			"style": {
+				"navigationBarTitleText": "用户详情页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/channel/channel",
+			"style": {
+				"navigationBarTitleText": "频道详情页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/channel/channel-detail-edit",
+			"style": {
+				"navigationBarTitleText": "可编辑的频道详情页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/channel/channel-classify",
+			"style": {
+				"navigationBarTitleText": "频道分类页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/broadcast/broadcast",
+			"style": {
+				"navigationBarTitleText": "节目详情页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/broadcast/broadcast-detail-edit",
+			"style": {
+				"navigationBarTitleText": "可编辑的节目详情页",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/player/player",
+			"style": {
+				"navigationBarTitleText": "播放界面",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/player/player-list",
+			"style": {
+				"navigationBarTitleText": "播放列表",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/community/post-detail",
+			"style": {
+				"navigationBarTitleText": "帖子详情",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/community/more-reply",
+			"style": {
+				"navigationBarTitleText": "更多回复",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/creation/creation",
+			"style": {
+				"navigationBarTitleText": "创作中心",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/creation/creation-channel",
+			"style": {
+				"navigationBarTitleText": "创建频道",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/creation/creation-post",
+			"style": {
+				"navigationBarTitleText": "帖子创建",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/creation/creation-broadcast",
+			"style": {
+				"navigationBarTitleText": "节目创建",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/creation/post-association-choose",
+			"style": {
+				"navigationBarTitleText": "帖子关联选择",
+				"titleNView": false
+			}
+		},
+		{
+			"path": "pages/community/post-association",
+			"style": {
+				"navigationBarTitleText": "关联帖子页",
+				"titleNView": false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	// 配置tabbar的基本路径
+	 "tabBar": {
+	        "color": "#999",
+	        "selectedColor": "#0aa671",
+	        "borderStyle": "white",
+			//"backgroundColor": "#ffffff",
+	        "list": [
+	            {
+	                "pagePath": "pages/index/index",
+					"text": "主页"
+	            },
+	            {
+	                "pagePath": "pages/community/community",
+					"text": "社区"
+	            },
+	            {
+	                "pagePath": "pages/my/my",
+					"text": "个人"
+	            }
+	        ]
+	  	} 
+
+}
